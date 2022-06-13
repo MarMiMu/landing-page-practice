@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Great Shoes </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="brand">
+            <a href="#" class="brand-title">Great<span>Shoes</span></a>
+            <nav>
+                <i class="fas fa-times-circle" id="close"></i>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#featured"> Featured</a></li>
+                    <li><a href="#our-products"> Products</a></li>
+                </ul>
+            </nav>
+            <i class="fas fa-bars" id="menu"></i>
+        </div>
+        <header class="hero" id="hero">
+            <div class="container spacing">
+                <h1 class="primary-title">Amazing shoes at an amazing price</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellat amet cum totam
+                    perferendis
+                    iusto? Aliquam illum incidunt veniam alias odio officia autem optio, laboriosam totam numquam
+                    aspernatur
+                    nostrum! Possimus.</p>
+                <a href="#featured" class="btn"> See what we have</a>
+            </div>
+        </header>
+        <main>
+            <section id="featured">
+                <div class="featured">
+                    <div class="container">
+                        <h2 class="section-title">
+                            Featured Products
+                        </h2>
+                        <div class="split">
+                            <a href="" class="featured__item">
+                                <img src="img/shoe-4.png" alt="" class="featured__img">
+                                <p class="featured__details"><span class="price">$99</span>shoe name</p>
+                            </a>
+                            <a href="" class="featured__item shoe2">
+                                <img src="img/shoe-5.png" alt="" class="featured__img">
+                                <p class="featured__details"><span class="price">$99</span>shoe name</p>
+                            </a>
+                            <a href="" class="featured__item">
+                                <img src="img/shoe-6.png" alt="" class="featured__img">
+                                <p class="featured__details"><span class="price">$99</span>shoe name</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="our-products">
+                <div class="our-products">
+                    <div class="container">
+                        <h2 class="section-title">
+                            Our Products
+                        </h2>
+                        <article class="product shoe-red spacing">
+                            <img src="img/shoe-1.png" alt="" class="product__image">
+                            <h3 class="product__title">A really nice shoe</h3>
+                            <p class="product__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestias
+                                impedit voluptatem repellendus quis praesentium voluptate in nemo</p>
+                            <a href="" class="btn"> Buy Now</a>
+                        </article>
+                        <article class="product shoe-white shoe-left spacing">
+                            <img src="img/shoe-2.png" alt="" class="product__image">
+                            <h3 class="product__title">A really nice shoe</h3>
+                            <p class="product__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestias
+                                impedit voluptatem repellendus quis praesentium voluptate in nemo</p>
+                            <a href="" class="btn">Buy Now</a>
+                        </article>
+                        <article class="product shoe-blue spacing">
+                            <img src="img/shoe-3.png" alt="" class="product__image">
+                            <h3 class="product__title">A really nice shoe</h3>
+                            <p class="product__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestias
+                                impedit voluptatem repellendus quis praesentium voluptate in nemo</p>
+                            <a href="" class="btn">Buy Now</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        const menu = document.querySelector('#menu')
+        const close = document.querySelector('#close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+
+</html>
